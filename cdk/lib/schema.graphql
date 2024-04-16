@@ -1,0 +1,16 @@
+schema {
+  query: Query
+}
+
+type Post {
+  name: String
+}
+
+type Query {
+  posts: PostsResposne
+}
+
+type PostsResposne {
+  items: [Post]
+  stash: String
+}
